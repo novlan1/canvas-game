@@ -25,6 +25,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
 }
 .encoding-left textarea,
 .encoding-right textarea {
@@ -137,4 +138,25 @@
 
 .dropdown .btn-default{
   width: 150px;
+}
+
+/* 响应式开发 */
+@media (max-width: 800px) {
+  .btn {
+    font-size: 11px;
+  }
+  .container {
+    margin: 20px 0;
+  }
+
+  .dropdown .btn-default,
+  #encodingBtn,
+  #decodingBtn,
+  .pwd-wrap .pwd-input {
+    width: 100px;
+  }
+ .pwd-wrap .pwd-input{
+    max-width: 100px;
+    min-width: 100px;
+  }
 }
