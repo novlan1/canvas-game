@@ -1,0 +1,180 @@
+$borderColr: #d64b75;
+$blurPixel: 5px;
+$spreadPixel: 5px;
+
+.spider-container{
+  max-width: 1000px;
+  padding: 16px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+.spider-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  .left-show{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    .spider-value{
+      font-weight: 800;
+      font-size: 15px;
+      color: #000;
+    }
+    .spider-time{
+      margin-left: 32px;
+    }
+  }
+  .right-btns{
+    display: flex;
+    align-items: center;
+    .redo-undo-btns{
+      display: flex;
+      align-items: center;
+      .anticon-undo, .anticon-redo{
+        font-size: 18px;
+        margin-left: 16px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.8);
+        &.disabled{
+          color: rgba(0, 0, 0, 0.4);
+          cursor: not-allowed;
+        }
+      }
+    }
+    button{
+      margin-left: 18px;
+    }
+  }
+}
+.spider-wrap {
+  background-color: #088131;
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+  .pause-mask{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left:  0;
+    z-index: 1000000;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .anticon-pause-circle{
+      font-size: 50px;
+      cursor: pointer;
+      color: rgba(255, 255, 255,0.7);
+    }
+  }
+  .card {
+    &.active {
+      box-sizing: content-box;
+      border-radius: 8px;
+      box-shadow: 0 0 $blurPixel $spreadPixel $borderColr;
+    }
+  }
+}
+
+.card{
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.cardv1 {
+    background-image: url(./card-img/card1.png);
+  }
+  &.cardv2 {
+    background-image: url(./card-img/card2.png);
+  }
+  &.cardv3 {
+    background-image: url(./card-img/card3.png);
+  }
+  &.cardv4 {
+    background-image: url(./card-img/card4.png);
+  }
+  &.cardv5 { 
+    background-image: url(./card-img/card5.png);
+  }
+  &.cardv6 {
+    background-image: url(./card-img/card6.png);
+  }
+  &.cardv7 {
+    background-image: url(./card-img/card7.png);
+  }
+  &.cardv8 { 
+    background-image: url(./card-img/card8.png);
+  }
+  &.cardv9 {
+    background-image: url(./card-img/card9.png);
+  }
+  &.cardv10 {
+    background-image: url(./card-img/card10.png);
+  }
+  &.cardv11 {
+    background-image: url(./card-img/card11.png);
+  }
+  &.cardv12 {
+    background-image: url(./card-img/card12.png);
+  }
+  &.cardv13 {
+    background-image: url(./card-img/card13.png);
+  }
+  &.cardvback {
+    background-image: url(./card-img/cardback.png);
+  }
+}
+.hard-dropdown{
+  z-index: 1000000 !important;
+  .ant-dropdown-menu-item, 
+  .ant-dropdown-menu-submenu-title{
+    padding: 3px 12px;
+  }
+  .ant-dropdown-menu-item.active{
+    background: #f0f0f0;
+  }
+}
+.ant-modal-mask, .ant-modal-wrap{
+  z-index: 1000000 !important;
+}
+/*
+ * 强制横屏显示：通过竖屏时旋转解决横屏问题
+ * 
+ */
+//  @media screen and  (orientation:  portrait){
+//   body {
+//       -webkit-transform:rotate(90deg);
+//       -webkit-transform-origin:0% 0%;/*1.重置旋转中心*/
+      
+//       -moz-transform: rotate(90deg);
+//       -moz-transform-origin:0% 0%;
+      
+//       -ms-transform: rotate(90deg);
+//       -ms-transform-origin:0% 0%;
+      
+//       transform: rotate(90deg);
+//       transform-origin:0% 0%;
+      
+//       width: 100vh !important;/*2.利用 vh 重置 ‘宽度’ */
+//       height: 100vw !important;/* 3.利用 vw 重置 ‘高度’ */
+      
+//       top: 0;
+//       left: 100%;/* 4.旋转后页面超出屏幕，重置页面定位位置 */
+//   }
+// }
+
+.next-game{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000000000;
+}

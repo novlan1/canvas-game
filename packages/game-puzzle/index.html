@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>拼图</title>
+  <link rel='stylesheet' type='text/css' href='./src//index.css' />
+</head>
+
+<body>
+  <div class="container">
+    <div class="game-wrap">
+      <div class="choose" id='choose'>
+        <span class="choose-item active" data-type='3'>3*3</span>
+        <span class="choose-item" data-type='4'>4*4</span>
+        <span class="choose-item" data-type='5'>5*5</span>
+        <span class="choose-item" data-type='6'>6*6</span>
+      </div>
+      <div id='game'>
+
+      </div>
+    </div>
+    <div id='control'>
+      <div class="timer-wrap">
+        <span>用时</span>
+        <span id='timer'>00:00</span>
+      </div>
+      <div>
+        <span class="pause" id='pause'>暂停</span>
+        <span class="reset" id='reset'>重来</span>
+      </div>
+    </div>
+  </div>
+<script src="./src/index.js"></script>
+</body>
+</html>

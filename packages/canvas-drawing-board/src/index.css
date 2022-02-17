@@ -1,0 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  -webkit-tap-highlight-color: transparent;
+}
+.wrap{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 1px solid #bdbdbd;
+  margin: 160px auto;
+  cursor: pointer;
+}
+.wrap-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 8px 4px 0;
+  position: relative;
+  z-index: 1;
+}
+.colors{
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+.colors > div, .own-color-label{
+  width: 16px;
+  height: 16px;
+  margin-left: 6px;
+  border: 2px solid #222;
+  border-radius: 50%;
+  transition: .2s ease-in-out;
+}
+.own-color-label{
+  background-color: #0a149d;
+}
+.colors > div[data-color=black] {
+  background-color: #222;
+}
+.colors > div[data-color=green] {
+  background-color: #5cb85c;
+}
+.colors > div[data-color=yellow] {
+  background-color: #f0ad4e;
+}
+.colors > div[data-color=red] {
+  background-color: #d9534f;
+}
+.colors > div[data-color=white] {
+  background-color: #fff;
+}
+.colors > div:hover, .colors > div.current, .own-color-label:hover, .own-color-label.current{
+  box-shadow: 0 0 4px 1px #222;
+}
+.controllers{
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 6px;
+}
+.controllers > div{
+  width: 24px;
+  height: 24px;
+  opacity: .5;
+  transition: opacity .2s ease-in-out;
+  margin: 0 2px;
+}
+.controllers .undo{
+  background: url(./icons/icon-undo.png) no-repeat 2px 2px;
+  background-size: 83.3%;
+}
+.controllers .redo{
+  background: url(./icons/icon-redo.png) no-repeat 2px 2px;
+  background-size: 83.3%;
+}
+.controllers .clear{
+  background: url(./icons/icon-clear.png) no-repeat 2px 2px;
+  background-size: 83.3%;
+}
+.controllers .download{
+  background: url(./icons/icon-download.png) no-repeat 2px 2px;
+  background-size: 75%;
+}
+.wrap canvas{
+  position: absolute;
+  top: 0;
+}
+#ownWidth{
+  margin-left: 12px;
+  cursor: pointer;
+  width: 60px;
+}
+#content{
+  width: 100%;
+  height: 100%;
+}

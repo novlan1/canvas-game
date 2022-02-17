@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>在线涂鸦</title>
+  <link rel='stylesheet' type='text/css' href='./src/index.css' />
+</head>
+<body>
+<div class="wrap">
+  <div class="wrap-top">
+    <div class="colors">
+      <div data-color='black' class="color-item current"></div>
+      <div data-color='green' class="color-item"></div>
+      <div data-color='yellow' class="color-item"></div>
+      <div data-color='red' class="color-item"></div>
+      <div data-color='white' class="color-item"></div>
+      <label for='ownColor' class="own-color-label" id='ownColorLabel'></label>
+      <input type="color" value="#0a149d" id='ownColor' style="display: none;"/>
+      <input type="range" min="0.01" max="50" value="5" id='ownWidth' />
+  </div>
+    <div class="controllers">
+      <div class="undo"></div>
+      <div class="redo"></div>
+      <div class="clear"></div>
+      <div class="download"></div>
+    </div>
+  </div>
+  <canvas id='content' width="500px" height="500px"></canvas>
+</div>
+<script src='./src/index.js'></script>
+</body>
+</html>
