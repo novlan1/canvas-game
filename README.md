@@ -1,8 +1,8 @@
-## canvas-game
+# canvas-game
 
 一些小游戏的集合。
 
-### 目录结构
+## 目录结构
 
 ```bash
 ─ packages                       
@@ -16,7 +16,7 @@
 ```
 
 
-### 预览地址
+## 预览地址
 
 1. [玫瑰](https://novlan1.github.io/canvas-game/packages/canvas-rose/index.html)
 2. [画板](https://novlan1.github.io/canvas-game/packages/canvas-drawing-board/index.html)
