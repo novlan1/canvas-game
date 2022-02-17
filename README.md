@@ -2,9 +2,10 @@
 
 一些小游戏的集合。
 
+### 目录结构
 
 ```bash
-── packages                       
+─ packages                       
     ├─ canvas-rose                # canvas绘制的玫瑰
     ├─ canvas-drawing-board       # canvas画板
     ├─ canvas-time                # canvas绘制的时间
@@ -13,5 +14,16 @@
     ├─ game-solitaire             # 蜘蛛纸牌游戏
     └─ game-whiteblock            # 别踩白块游戏
 ```
+
+
+### 预览地址
+
+1. [玫瑰](https://novlan1.github.io/canvas-game/packages/canvas-rose/index.html)
+2. [画板](https://novlan1.github.io/canvas-game/packages/canvas-drawing-board/index.html)
+3. [时间动画](https://novlan1.github.io/canvas-game/packages/canvas-time/index.html)
+4. [2048](https://novlan1.github.io/canvas-game/packages/game-2048/index.html)
+5. [拼图游戏](https://novlan1.github.io/canvas-game/packages/game-puzzle/index.html)
+6. [蜘蛛纸牌](https://novlan1.github.io/canvas-game/packages/game-solitaire/docs/index.html)
+7. [别踩白块](https://novlan1.github.io/canvas-game/packages/game-whiteblock/index.html)
 
 
