@@ -9,6 +9,7 @@
     ├─ canvas-rose                # canvas绘制的玫瑰
     ├─ canvas-drawing-board       # canvas画板
     ├─ canvas-time                # canvas绘制的时间
+    ├─ encrypt-tool               # 加解密工具
     ├─ game-2048                  # 2048游戏
     ├─ game-puzzle                # 拼图游戏
     ├─ game-solitaire             # 蜘蛛纸牌游戏
@@ -30,7 +31,8 @@
 7. [别踩白块](https://novlan1.github.io/canvas-game/packages/game-whiteblock/index.html)
 8. [点灯笼游戏](https://novlan1.github.io/canvas-game/packages/game-lantern/docs/index.html#/index)
 9. [地图服务](https://novlan1.github.io/canvas-game/packages/map-service/index.html)
-10. [my-docs](https://novlan1.github.io/canvas-game/packages/my-docs/docs/index.html)
+10. [加解密工具](https://novlan1.github.io/canvas-game/packages/encrypt-tool/index.html)
+11. [my-docs](https://novlan1.github.io/canvas-game/packages/my-docs/docs/index.html)
  
 
 
