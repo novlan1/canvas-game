@@ -8,4 +8,4 @@ npm run publish
 
 ### 在线预览
 
-[在线预览](https://novlan1.github.io/canvas-game/packages/game-solitaire/index.html)
+[在线预览](https://novlan1.github.io/canvas-game/packages/game-solitaire/docs/index.html)
