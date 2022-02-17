@@ -1,0 +1,11 @@
+.wrapper{
+  margin: 20px auto;
+  min-width: 300px;
+  max-width: 500px;
+  padding: 0 20px;
+  font-size: 15px;
+}
+ul{
+  padding-left: 25px;
+  font-size: 14px;
+}

@@ -1,0 +1,16 @@
+## bash
+1. [Shell 的命令](#shell/command)
+1. [文件操作](#shell/file-operation)
+1. [文件系统](#shell/file)
+1. [文本处理](#shell/text)
+1. [归档和备份](#shell/archiving)
+1. [硬件操作](#shell/hardware)
+1. [重定向](#shell/redirection)
+1. [正则表达式](#shell/regex)
+1. [系统信息](#shell/system)
+1. [时间管理](#shell/time)
+1. [用户管理](#shell/user)
+1. [进程管理](#shell/process)
+1. [标准I/O](#shell/stdio)
+1. [异步任务](#shell/async)
+

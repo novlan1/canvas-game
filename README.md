@@ -12,7 +12,8 @@
     ├─ game-2048                  # 2048游戏
     ├─ game-puzzle                # 拼图游戏
     ├─ game-solitaire             # 蜘蛛纸牌游戏
-    └─ game-whiteblock            # 别踩白块游戏
+    ├─ game-whiteblock            # 别踩白块游戏
+    └─ map-service                # 地图服务
 ```
 
 
@@ -25,5 +26,7 @@
 5. [拼图游戏](https://novlan1.github.io/canvas-game/packages/game-puzzle/index.html)
 6. [蜘蛛纸牌](https://novlan1.github.io/canvas-game/packages/game-solitaire/docs/index.html)
 7. [别踩白块](https://novlan1.github.io/canvas-game/packages/game-whiteblock/index.html)
+8. [地图服务](https://novlan1.github.io/canvas-game/packages/map-service/index.html)
+ 
 
 
