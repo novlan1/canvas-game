@@ -1,10 +1,10 @@
-## my-game
+## canvas-game
 
 一些小游戏的集合。
 
 
 ```bash
-├─ packages                       
+── packages                       
     ├─ canvas-rose                # canvas绘制的玫瑰
     ├─ canvas-drawing-board       # canvas画板
     ├─ canvas-time                # canvas绘制的时间
