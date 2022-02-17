@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  margin: 100px auto 0;
+}
+.container nav {
+  margin-bottom: 20px;
+}
+.encoding-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.encoding-left, .encoding-right {
+  width: 40%;
+}
+
+.encoding-left.rsa, .encoding-right.rsa {
+  width: 30%;
+}
+.encoding-mid {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.encoding-left textarea,
+.encoding-right textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 500px;
+  padding: 4px 8px;
+  position: relative;
+  z-index: 1;
+}
+#decodingBtn {
+  margin: 10px 0 0;
+  width: 150px;
+}
+#encodingBtn {
+  margin: 30px 0 0;
+  width: 150px;
+}
+.pwd-wrap{
+  text-align: center;
+}
+.pwd-wrap .pwd-input{
+  margin: 20px auto 0;
+  width: 150px;
+  max-width: 150px;
+  min-width: 150px;
+  padding: 4px 8px;
+  min-height: 32px;
+  height: 32px;
+  line-height: 22px;
+}
+.encoding-mid.rsa textarea{
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 4px 8px;
+}
+.encoding-mid.rsa{
+  flex: 0 1 auto;
+  width: 30%;
+}
+#fileUploaderWrap{
+  display: none;
+  align-items: center;
+  position: relative;
+}
+#fileUploaderWrap .btn-primary{
+  cursor: pointer;
+  padding: 6px 18px;
+  position: relative;
+}
+#fileUploaderWrap .glyphicon-remove{
+  cursor: pointer;
+  margin-left: 12px;
+  display: none;
+}
+#fileUploader{
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  cursor: pointer;
+}
+#imgName{
+  margin-left: 12px;
+  max-width: 280px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: none;
+}
+#fileUploader:hover{
+  outline: none;
+}
+#plainTextWrap{
+  width: 100%;
+}
+#preview{
+  max-width: 100%;
+  margin: 20px 0;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
+  outline-offset: 0;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+}
+.dropdown,
+.dropup {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.dropdown .btn-default{
+  width: 150px;
+}
