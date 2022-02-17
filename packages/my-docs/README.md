@@ -10,4 +10,4 @@
 - [x] Web API
 - [x] Shell
 
-[在线预览](https://novlan1.github.io/my-docs/)
+[在线预览](https://novlan1.github.io/canvas-game/packages/my-docs/docs/index.html)

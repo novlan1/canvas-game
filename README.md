@@ -13,7 +13,8 @@
     ├─ game-puzzle                # 拼图游戏
     ├─ game-solitaire             # 蜘蛛纸牌游戏
     ├─ game-whiteblock            # 别踩白块游戏
-    └─ map-service                # 地图服务
+    ├─ map-service                # 地图服务
+    └─ my-docs                    # 一些文档
 ```
 
 
@@ -27,6 +28,7 @@
 6. [蜘蛛纸牌](https://novlan1.github.io/canvas-game/packages/game-solitaire/docs/index.html)
 7. [别踩白块](https://novlan1.github.io/canvas-game/packages/game-whiteblock/index.html)
 8. [地图服务](https://novlan1.github.io/canvas-game/packages/map-service/index.html)
+9. [my-docs](https://novlan1.github.io/canvas-game/packages/my-docs/docs/index.html)
  
 
 
