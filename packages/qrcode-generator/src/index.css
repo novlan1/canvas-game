@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 12px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.wrap {
+  width: calc(min(100%, 400px));
+  margin: 20px auto;
+}
+
+#text {
+  height: 25px;
+  line-height: 25px;
+  padding: 0 4px;
+  font-size: 15px;
+}
+
+#qrcode {
+  margin-top: 20px;
+}
+
+#historyList ul {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#historyList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  font-size: 14px;
+  height: 25px;
+  line-height: 25px;
+}
+
+.history-name {
+  max-width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

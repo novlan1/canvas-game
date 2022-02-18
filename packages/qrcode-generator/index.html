@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>二维码生成器</title>
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <link rel='stylesheet' type='text/css' href='./src/index.css' />
+</head>
+
+<body>
+  <div class="wrap">
+    <h2>二维码生成器</h2>
+    <input id="text" type="text" value="" style="width:90%" placeholder="请输入文本, 按下回车生成" /><br />
+    <div id="qrcode"></div>
+    <div id='historyList'>
+      <h3 style="margin-top: 25px;margin-bottom: 10px;font-size: 16px;">历史记录</h3>
+      <ul id='historyListUl'>
+      </ul>
+    </div>
+  </div>
+
+  <script src='./src/index.js'></script>
+</body>
+
+</html>
