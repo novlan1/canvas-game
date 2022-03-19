@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+}
+
+audio::-webkit-media-controls-panel {
+  background: white;
+}
+
+.app {
+  display: flex;
+  padding: 16px;
+  background: linear-gradient(0, #181929, 10%, #404264, 90%, #181929, 100%, #404264);
+  border-radius: 6px;
+
+  flex-direction: column-reverse;
+
+  .playerWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .curAudioName {
+      max-width: 135px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  .playListWrapper {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
