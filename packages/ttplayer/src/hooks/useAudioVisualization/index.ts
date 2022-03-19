@@ -42,7 +42,7 @@ const useAudioVisualization = (selector: string, length = 50) => {
     // 准备数据数组
     analyserRef.current.fftSize = 256;
     const bufferLength = analyserRef.current.frequencyBinCount;
-    console.log('bufferLength',bufferLength)
+    // console.log('bufferLength',bufferLength)
     const dataArray = new Uint8Array(bufferLength);
 
     // 开始递归画图

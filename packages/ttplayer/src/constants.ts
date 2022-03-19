@@ -16,7 +16,7 @@ export const defaultPlayList: PlayListItem[] = [
     url: dukou,
   },
   {
-    name: '陈奕讯 - 蛄蛹者',
+    name: '陈奕讯 - 孤勇者',
     url: guyongzhe,
   },
   {

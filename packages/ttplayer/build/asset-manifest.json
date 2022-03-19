@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/ttplayer/static/css/main.8acd0f39.css",
-    "main.js": "/ttplayer/static/js/main.caaeef3c.js",
-    "static/media/new-thang.flac": "/ttplayer/static/media/new-thang.25a5f79376e0d93bcdd2.flac",
-    "static/media/guyongzhe.flac": "/ttplayer/static/media/guyongzhe.cb42cb7f327fab7dcc38.flac",
-    "static/media/zheshijienameduoren.flac": "/ttplayer/static/media/zheshijienameduoren.c02db09660b4f29b06b2.flac",
-    "static/media/dukou.flac": "/ttplayer/static/media/dukou.912f161b068ec6db15fb.flac",
-    "static/media/gao.flac": "/ttplayer/static/media/gao.7be15affb7d2af1f65df.flac",
-    "static/media/kong.flac": "/ttplayer/static/media/kong.73f1d40ddaa536725441.flac",
-    "index.html": "/ttplayer/index.html",
-    "main.8acd0f39.css.map": "/ttplayer/static/css/main.8acd0f39.css.map",
-    "main.caaeef3c.js.map": "/ttplayer/static/js/main.caaeef3c.js.map"
+    "main.css": "/static/css/main.83138e98.css",
+    "main.js": "/static/js/main.6f442693.js",
+    "static/media/new-thang.flac": "/static/media/new-thang.25a5f79376e0d93bcdd2.flac",
+    "static/media/guyongzhe.flac": "/static/media/guyongzhe.cb42cb7f327fab7dcc38.flac",
+    "static/media/zheshijienameduoren.flac": "/static/media/zheshijienameduoren.c02db09660b4f29b06b2.flac",
+    "static/media/dukou.flac": "/static/media/dukou.912f161b068ec6db15fb.flac",
+    "static/media/gao.flac": "/static/media/gao.7be15affb7d2af1f65df.flac",
+    "static/media/kong.flac": "/static/media/kong.73f1d40ddaa536725441.flac",
+    "index.html": "/index.html",
+    "main.83138e98.css.map": "/static/css/main.83138e98.css.map",
+    "main.6f442693.js.map": "/static/js/main.6f442693.js.map"
   },
   "entrypoints": [
-    "static/css/main.8acd0f39.css",
-    "static/js/main.caaeef3c.js"
+    "static/css/main.83138e98.css",
+    "static/js/main.6f442693.js"
   ]
 }

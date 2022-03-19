@@ -16,7 +16,7 @@ const CANVAS_WIDTH_HEIGHT_MAP: any = {
 const Player = React.forwardRef((props: Props, audioRef: Ref<HTMLAudioElement>) => {
   const { playItem, onPlay, onPause } = props;
   const clientWidth = document.body.clientWidth;
-  console.log('clientWidth', clientWidth)
+  // console.log('clientWidth', clientWidth)
   let canvasWidth = 500;
   if (clientWidth < 400) {
     canvasWidth = 300

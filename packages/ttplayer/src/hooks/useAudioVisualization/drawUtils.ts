@@ -57,7 +57,7 @@ export const drawFloats = (canvasEl: HTMLCanvasElement, dataArray: Uint8Array) =
 }
 
 export const drawBars = (canvasEl: HTMLCanvasElement, dataArray: Uint8Array) => {
-  console.log('dataArray',dataArray)
+  // console.log('dataArray',dataArray)
   const canvasWidth = canvasEl.width;
   const canvasHeight = canvasEl.height;
   const canvasCtx = canvasEl.getContext("2d");
