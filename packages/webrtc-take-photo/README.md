@@ -1,3 +1,3 @@
 # webrtc-take-photo
 
-![](./screenshot.png)
+用WebRtc自拍
