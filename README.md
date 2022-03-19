@@ -17,6 +17,7 @@
     ├─ game-lantern                        # 点灯笼游戏
     ├─ map-service                         # 地图服务
     └─ my-docs                             # 一些文档
+    └─ ttplayer                            # 音乐频谱图
     └─ qrcode-generator                    # 二维码生成器
     
 ```
@@ -36,6 +37,7 @@
 10. [加解密工具](https://novlan1.github.io/canvas-game/packages/encrypt-tool/index.html)
 11. [二维码生成器](https://novlan1.github.io/canvas-game/packages/qrcode-generator/index.html)
 12. [my-docs](https://novlan1.github.io/canvas-game/packages/my-docs/docs/index.html)
+13. [音乐频谱图](https://novlan1.github.io/canvas-game/packages/ttplayer/build/index.html)
  
 
 
