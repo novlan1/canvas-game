@@ -1,4 +1,4 @@
-let width = 500; // 默认比例
+let width = 700; // 默认比例
 let height = 0; // 视频的高度，需要按照上面等比例放大
 
 let streaming = false;
@@ -9,6 +9,7 @@ let photo = null;
 let takePhotoButton = null;
 let downloadButton = null;
 let clearButton = null;
+let toggleVideoButton = null;
 
 const clearPhoto = () => {
   const context = canvas.getContext('2d')
@@ -38,9 +39,23 @@ const takePhoto = () => {
 
 const downloadPhoto = () => {
   const link = document.createElement('a');
-  link.download = '你的帅照.png';
+  link.download = 'photo.png';
   link.href = canvas.toDataURL();
   link.click();
+}
+
+const toggleVideo = async () => {
+  const closed = toggleVideoButton.className.includes('closed')
+  if (closed) {
+    video.srcObject = await navigator.mediaDevices.getUserMedia({video: true, audio: false})
+    video.play()
+    toggleVideoButton.innerText = '关闭'
+    toggleVideoButton.classList.remove('closed')
+  } else {
+    video.srcObject && video.srcObject.getTracks()[0].stop();
+    toggleVideoButton.innerText = '开启'
+    toggleVideoButton.classList.add('closed')
+  }
 }
 
 const start = async () => {
@@ -50,6 +65,8 @@ const start = async () => {
   takePhotoButton = document.getElementById('takePhotoButton');
   downloadButton = document.getElementById('downloadButton');
   clearButton = document.getElementById('clearButton');
+  toggleVideoButton = document.querySelector('#toggleVideoButton')
+
 
   // 获取摄像头的视频流
   try {
@@ -86,6 +103,10 @@ const start = async () => {
 
   clearButton.addEventListener('click', (event) => {
     clearPhoto();
+  })
+
+  toggleVideoButton.addEventListener('click', () => {
+    toggleVideo();
   })
 
   // 生成默认空白图片

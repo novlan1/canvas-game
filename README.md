@@ -18,6 +18,7 @@
     ├─ map-service                         # 地图服务
     └─ my-docs                             # 一些文档
     └─ ttplayer                            # 音乐频谱图
+    └─ Webrtc-take-photo                   # 用Webrtc自拍
     └─ qrcode-generator                    # 二维码生成器
     
 ```
@@ -38,6 +39,7 @@
 11. [二维码生成器](https://novlan1.github.io/canvas-game/packages/qrcode-generator/index.html)
 12. [my-docs](https://novlan1.github.io/canvas-game/packages/my-docs/docs/index.html)
 13. [音乐频谱图](https://novlan1.github.io/canvas-game/packages/ttplayer/build/index.html)
+14. [Webrtc-take-photo](https://novlan1.github.io/canvas-game/packages/webrtc-take-photo/index.html)
  
 
 
