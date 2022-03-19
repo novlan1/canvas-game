@@ -20,6 +20,37 @@ const clearPhoto = () => {
   photo.setAttribute('src', data);
 }
 
+function timeStampFormat(timestamp, fmt, defaultval) {
+  if (!timestamp) {
+    return defaultval || '';
+  }
+
+  var date = new Date();
+
+  if ("".concat(timestamp).length === 10) {
+    timestamp *= 1000;
+  }
+
+  date.setTime(timestamp);
+  var o = {
+    'M+': date.getMonth() + 1,
+    'd+': date.getDate(),
+    'h+': date.getHours(),
+    'm+': date.getMinutes(),
+    's+': date.getSeconds(),
+    'q+': Math.floor((date.getMonth() + 3) / 3),
+    S: date.getMilliseconds() // 毫秒
+
+  };
+  if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, "".concat(date.getFullYear()).slice(4 - RegExp.$1.length)); // eslint-disable-next-line no-restricted-syntax
+
+  for (var k in o) {
+    if (new RegExp("(".concat(k, ")")).test(fmt)) fmt = fmt.replace(RegExp.$1, RegExp.$1.length === 1 ? o[k] : "00".concat(o[k]).slice("".concat(o[k]).length));
+  }
+
+  return fmt;
+}
+
 const takePhoto = () => {
   const context = canvas.getContext('2d')
   if (width && height) {
@@ -39,7 +70,7 @@ const takePhoto = () => {
 
 const downloadPhoto = () => {
   const link = document.createElement('a');
-  link.download = 'photo.png';
+  link.download = `WebRtc Photo ${timeStampFormat(Date.now(), 'yyyy-MM-dd hh_mm_ss')}.png`;
   link.href = canvas.toDataURL();
   link.click();
 }
